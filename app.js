@@ -1,5 +1,5 @@
 // API Key - Replace this with your actual API key from exchangerate-api.com
-const API_KEY = 'YOUR_API_KEY';
+const API_KEY = '7d6097c0306f7dd437b3e599';
 const BASE_URL = 'https://v6.exchangerate-api.com/v6/';
 
 // DOM Elements
