@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>Currency Converter</h1>
+        <div class="converter-container">
+            <div class="input-group">
+                <input type="number" id="amount" placeholder="Enter amount" value="1">
+                <select id="from-currency"></select>
+            </div>
+            
+            <button id="swap-btn">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M7 16V4m0 0L3 8m4-4l4 4M17 8v12m0 0l4-4m-4 4l-4-4"/>
+                </svg>
+            </button>
+            
+            <div class="input-group">
+                <input type="number" id="result" placeholder="Result" readonly>
+                <select id="to-currency"></select>
+            </div>
+            
+            <button id="convert-btn">Convert</button>
+        </div>
+        
+        <div class="exchange-rate-info">
+            <p id="exchange-rate">1 USD = <span id="rate-value">Loading...</span> <span id="target-currency">EUR</span></p>
+            <p id="last-updated">Last updated: <span id="update-time">Loading...</span></p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>Powered by <a href="https://www.exchangerate-api.com" target="_blank">ExchangeRate-API</a></p>
+    </footer>
+    
+    <script src="app.js"></script>
+</body>
+</html>
